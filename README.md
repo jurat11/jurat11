@@ -8,6 +8,7 @@
 <p align="center">
   <a href="https://jurat-nortojiev.vercel.app"><img alt="Website" src="https://img.shields.io/badge/website-jurat--nortojiev.vercel.app-E75E24?style=for-the-badge&logo=vercel&logoColor=white"></a>
   <a href="https://www.linkedin.com/in/jur-at-nortojiyev-5399b034a/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+  <a href="https://x.com/JuratNortojiev"><img alt="X" src="https://img.shields.io/badge/@JuratNortojiev-000000?style=for-the-badge&logo=x&logoColor=white"></a>
   <a href="https://instagram.com/jurat1_"><img alt="Instagram" src="https://img.shields.io/badge/@jurat1__-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
   <a href="https://t.me/jurat1"><img alt="Telegram" src="https://img.shields.io/badge/@jurat1-26A5E4?style=for-the-badge&logo=telegram&logoColor=white"></a>
 </p>
