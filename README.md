@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <a href="https://jurat-nortojiev.vercel.app"><img alt="Website" src="https://img.shields.io/badge/website-jurat--nortojiev.vercel.app-E75E24?style=for-the-badge&logo=vercel&logoColor=white"></a>
+  <a href="https://juratnortojiev.us"><img alt="Website" src="https://img.shields.io/badge/website-juratnortojiev.us-E75E24?style=for-the-badge&logo=vercel&logoColor=white"></a>
   <a href="https://www.linkedin.com/in/jur-at-nortojiyev-5399b034a/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
   <a href="https://x.com/JuratNortojiev"><img alt="X" src="https://img.shields.io/badge/@JuratNortojiev-000000?style=for-the-badge&logo=x&logoColor=white"></a>
   <a href="https://instagram.com/jurat1_"><img alt="Instagram" src="https://img.shields.io/badge/@jurat1__-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
@@ -52,6 +52,6 @@ Everything below is live — click and it opens.
 
 - Teaching a question bank to tell me what a student actually doesn't know yet — **KLIMB**
 - Running my own life off a dashboard and a Telegram bot — **Jurat OS**
-- Reading through the Uzbek classics and the canon, in public → [the library](https://jurat-nortojiev.vercel.app/library)
+- Reading through the Uzbek classics and the canon, in public → [the library](https://juratnortojiev.us/library)
 
 <p align="center"><sub>Salem, Virginia · building on the web</sub></p>
