@@ -21,6 +21,7 @@ Everything here is live — click and it opens.
 
 | | What it is | Live |
 |---|---|---|
+| **MARGINAL** | What your next dollar of retirement income actually costs, once Social Security taxation, capital gains stacking, the senior deduction phase-out and Medicare's IRMAA cliffs are all counted. A Rust tax engine compiled to WebAssembly: the arithmetic runs in your browser and your figures never leave it. | [marginal-sand.vercel.app](https://marginal-sand.vercel.app) |
 | **KLIMB** | Digital SAT prep. A tagged question bank, per-skill mastery measured from a student's own attempts, and a study plan built backwards from their test date. | [quiet-study-three.vercel.app](https://quiet-study-three.vercel.app) |
 | **Jurat OS** | A personal life OS — net worth that updates itself from live metal and equity prices, budgets, habits, tasks, and a Telegram bot that logs an expense from one sentence. | [jurat-os.vercel.app](https://jurat-os.vercel.app) |
 | **PolyaBor** | Find and book football pitches across Uzbekistan. Search by time and neighbourhood, hold a slot, confirm in Telegram. | [polya-bor.vercel.app](https://polya-bor.vercel.app) |
@@ -28,6 +29,26 @@ Everything here is live — click and it opens.
 | **Agora Aid Program** | A full-scholarship admissions programme for the Class of 2031 — deliberately no framework, no build step, no dependencies. | [agora-aid.vercel.app](https://agora-aid.vercel.app) |
 | **BiteWise** | Nutrition tracking that starts from what you actually ate: describe the meal, get the macros. | [v0-nutrition-info-app.vercel.app](https://v0-nutrition-info-app.vercel.app) |
 | **NAVON Agency** | Brand and site for a creative agency — one long scroll that has to carry the whole pitch. | [navon-agency.vercel.app](https://navon-agency.vercel.app) |
+
+---
+
+### MARGINAL, in a bit more detail
+
+Ask most retirees their tax rate and they name a bracket. That number is close to
+meaningless: four separate mechanisms act on the same dollar at once, and a 12%
+bracket can behave like 22.2%. One dollar over $109,000 of income raises a
+Medicare premium by $974.40 for the year — a cliff, not a rate.
+
+[MARGINAL](https://github.com/jurat11/marginal) draws that curve. The engine is
+Rust compiled to 57 KB of WebAssembly; the page is one HTML file, one stylesheet
+and one script, with no framework and no third-party code. There is no backend,
+so there is nowhere for your numbers to go.
+
+The part I care about is the proof. An independent Python implementation of the
+same rules agrees with the engine to the cent across 200,000 randomised inputs,
+every constant is traced to the IRS revenue procedure or the CMS notice it came
+from, and CI re-runs all of it — including the exact WebAssembly a browser
+downloads — on every push.
 
 ---
 
@@ -50,6 +71,8 @@ rows skip layout entirely.
 ### What I reach for
 
 <p>
+  <img alt="Rust" src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white">
+  <img alt="WebAssembly" src="https://img.shields.io/badge/WebAssembly-654FF0?style=flat-square&logo=webassembly&logoColor=white">
   <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white">
   <img alt="React" src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB">
   <img alt="Next.js" src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white">
@@ -67,6 +90,7 @@ rows skip layout entirely.
 
 ### Currently
 
+- Writing a retirement tax engine in Rust that has to agree with a second implementation to the cent — **[MARGINAL](https://github.com/jurat11/marginal)**
 - Teaching a question bank to work out what a student actually doesn't know yet — **KLIMB**
 - Running my own life off a dashboard and a Telegram bot — **Jurat OS**
 - Reading the Uzbek classics alongside the canon, in public → [the library](https://juratnortojiev.us/library)
