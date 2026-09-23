@@ -22,6 +22,7 @@ Everything here is live — click and it opens.
 | | What it is | Live |
 |---|---|---|
 | **MARGINAL** | What your next dollar of retirement income actually costs, once Social Security taxation, capital gains stacking, the senior deduction phase-out and Medicare's IRMAA cliffs are all counted. A Rust tax engine compiled to WebAssembly: the arithmetic runs in your browser and your figures never leave it. | [marginal-sand.vercel.app](https://marginal-sand.vercel.app) |
+| **Footnote** | An AI agent that reads a public company's SEC filings and writes an analysis where every number is cited to the exact filing it came from, and machine-verified. The language model never produces a number: Python builds a fact ledger, the model refers to facts by token, and a verifier rejects any figure that is not cited. | [footnote-jurat.vercel.app](https://footnote-jurat.vercel.app) |
 | **KLIMB** | Digital SAT prep. A tagged question bank, per-skill mastery measured from a student's own attempts, and a study plan built backwards from their test date. | [quiet-study-three.vercel.app](https://quiet-study-three.vercel.app) |
 | **Jurat OS** | A personal life OS — net worth that updates itself from live metal and equity prices, budgets, habits, tasks, and a Telegram bot that logs an expense from one sentence. | [jurat-os.vercel.app](https://jurat-os.vercel.app) |
 | **PolyaBor** | Find and book football pitches across Uzbekistan. Search by time and neighbourhood, hold a slot, confirm in Telegram. | [polya-bor.vercel.app](https://polya-bor.vercel.app) |
@@ -49,6 +50,24 @@ same rules agrees with the engine to the cent across 200,000 randomised inputs,
 every constant is traced to the IRS revenue procedure or the CMS notice it came
 from, and CI re-runs all of it — including the exact WebAssembly a browser
 downloads — on every push.
+
+---
+
+### Footnote, in a bit more detail
+
+Financial write-ups are full of numbers you are asked to trust. Footnote refuses
+that. It reads a company's SEC XBRL filings, builds a fact ledger in Python, and
+lets the language model write the analysis using only tokens that point at ledger
+facts — never a digit of its own. A renderer swaps each token for the value and a
+footnote to the filing; a verifier then scans the prose, and any number that did
+not come from a token gets the report rejected and rewritten.
+
+[Footnote](https://github.com/jurat11/footnote) runs at zero API cost by default —
+the writer is a deterministic engine, so the whole thing works with no paid key,
+and drops in a real LLM the moment one exists. The proof is the same instinct as
+MARGINAL: across a 25-company universe every report passes verification with zero
+uncited numbers, and an independent second pass re-fetches every figure through a
+different SEC endpoint and finds zero mismatches.
 
 ---
 
