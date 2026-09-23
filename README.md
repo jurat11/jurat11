@@ -22,7 +22,7 @@ Everything here is live — click and it opens.
 | | What it is | Live |
 |---|---|---|
 | **MARGINAL** | What your next dollar of retirement income actually costs, once Social Security taxation, capital gains stacking, the senior deduction phase-out and Medicare's IRMAA cliffs are all counted. A Rust tax engine compiled to WebAssembly: the arithmetic runs in your browser and your figures never leave it. | [marginal-sand.vercel.app](https://marginal-sand.vercel.app) |
-| **Footnote** | An AI agent that reads a public company's SEC filings and writes an analysis where every number is cited to the exact filing it came from, and machine-verified. The language model never produces a number: Python builds a fact ledger, the model refers to facts by token, and a verifier rejects any figure that is not cited. | [footnote-jurat.vercel.app](https://footnote-jurat.vercel.app) |
+| **Footnote** | An AI agent that reads a public company's SEC filings and writes an analysis where every number is cited to the exact filing it came from, and machine-verified. The language model never produces a number: Python builds a fact ledger, the model refers to facts by token, and a verifier rejects any figure that is not cited. | [demo](https://footnote-jurat.vercel.app) · [live](https://footnote.streamlit.app) |
 | **KLIMB** | Digital SAT prep. A tagged question bank, per-skill mastery measured from a student's own attempts, and a study plan built backwards from their test date. | [quiet-study-three.vercel.app](https://quiet-study-three.vercel.app) |
 | **Jurat OS** | A personal life OS — net worth that updates itself from live metal and equity prices, budgets, habits, tasks, and a Telegram bot that logs an expense from one sentence. | [jurat-os.vercel.app](https://jurat-os.vercel.app) |
 | **PolyaBor** | Find and book football pitches across Uzbekistan. Search by time and neighbourhood, hold a slot, confirm in Telegram. | [polya-bor.vercel.app](https://polya-bor.vercel.app) |
@@ -68,6 +68,10 @@ and drops in a real LLM the moment one exists. The proof is the same instinct as
 MARGINAL: across a 25-company universe every report passes verification with zero
 uncited numbers, and an independent second pass re-fetches every figure through a
 different SEC endpoint and finds zero mismatches.
+
+Two front doors: the [demo](https://footnote-jurat.vercel.app) is an instant,
+always-on static page showing ten pre-built reports, and the
+[live app](https://footnote.streamlit.app) analyzes any US-listed company on demand.
 
 ---
 
