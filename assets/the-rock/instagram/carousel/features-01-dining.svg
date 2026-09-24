@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+<rect width="1080" height="1350" fill="#F4EBDD"/>
+<rect x="0" y="0" width="1080" height="30" fill="#7A263A"/>
+<circle cx="116" cy="118" r="28" fill="#7A263A"/>
+<path d="M102 129 L108 108 L123 101 L133 113 L130 132 Z" fill="#F4EBDD"/>
+<text x="160" y="132" font-family="Arial, Helvetica, sans-serif" font-size="27" letter-spacing="5" fill="#7A263A">DINING  /  01</text>
+<text x="92" y="435" font-family="Georgia, 'Times New Roman', serif" font-size="128" font-weight="700" fill="#171311">dining</text>
+<line x1="92" y1="505" x2="988" y2="505" stroke="#7A263A" stroke-width="3"/>
+<text x="92" y="610" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="500" fill="#171311">commons menus.</text>
+<text x="92" y="702" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="500" fill="#171311">student ratings.</text>
+<text x="92" y="794" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="500" fill="#171311">calories + protein.</text>
+<text x="92" y="886" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="500" fill="#171311">how busy it is right now.</text>
+<text x="92" y="1240" font-family="Arial, Helvetica, sans-serif" font-size="25" letter-spacing="2" fill="#7A263A">therockroanoke.tech</text>
+<text x="988" y="1240" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="25" fill="#7A263A">02 / 08</text>
+</svg>
