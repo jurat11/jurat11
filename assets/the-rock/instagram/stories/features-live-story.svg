@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+<rect width="1080" height="1920" fill="#171311"/>
+<rect x="0" y="0" width="1080" height="34" fill="#7A263A"/>
+<circle cx="120" cy="135" r="30" fill="#7A263A"/>
+<path d="M105 148 L111 124 L127 116 L139 129 L136 151 Z" fill="#F4EBDD"/>
+<text x="168" y="150" font-family="Arial, Helvetica, sans-serif" font-size="30" letter-spacing="5" fill="#F4EBDD">THE ROCK</text>
+
+<text x="88" y="610" font-family="Georgia, 'Times New Roman', serif" font-size="142" font-weight="700" fill="#F4EBDD">everything</text>
+<text x="88" y="760" font-family="Georgia, 'Times New Roman', serif" font-size="142" font-weight="700" fill="#F4EBDD">in one place.</text>
+
+<line x1="88" y1="850" x2="992" y2="850" stroke="#7A263A" stroke-width="4"/>
+
+<text x="88" y="980" font-family="Arial, Helvetica, sans-serif" font-size="53" fill="#F4EBDD">dining · rides · marketplace</text>
+<text x="88" y="1065" font-family="Arial, Helvetica, sans-serif" font-size="53" fill="#F4EBDD">events · directory · courses</text>
+<text x="88" y="1150" font-family="Arial, Helvetica, sans-serif" font-size="53" fill="#F4EBDD">compliments</text>
+
+<rect x="88" y="1325" rx="34" ry="34" width="904" height="170" fill="#7A263A"/>
+<text x="540" y="1397" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="36" letter-spacing="2" fill="#F4EBDD">LIVE NOW</text>
+<text x="540" y="1460" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" fill="#F4EBDD">therockroanoke.tech</text>
+
+<text x="88" y="1780" font-family="Arial, Helvetica, sans-serif" font-size="29" fill="#AFA39A">roanoke email only · free</text>
+</svg>
