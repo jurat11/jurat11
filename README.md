@@ -7,7 +7,7 @@
 
 <p align="center">
   <a href="https://juratnortojiev.us"><img alt="Website" src="https://img.shields.io/badge/juratnortojiev.us-E75E24?style=for-the-badge&logo=googlechrome&logoColor=white"></a>
-  <a href="https://www.linkedin.com/in/jur-at-nortojiyev-5399b034a/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+  <a href="https://www.linkedin.com/in/jurat-nortojiev-5399b034a/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
   <a href="https://x.com/JuratNortojiev"><img alt="X" src="https://img.shields.io/badge/@JuratNortojiev-000000?style=for-the-badge&logo=x&logoColor=white"></a>
   <a href="https://instagram.com/jurat1_"><img alt="Instagram" src="https://img.shields.io/badge/@jurat1__-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
   <a href="https://t.me/jurat1"><img alt="Telegram" src="https://img.shields.io/badge/@jurat1-26A5E4?style=for-the-badge&logo=telegram&logoColor=white"></a>
@@ -26,7 +26,7 @@ Everything here is live — click and it opens.
 | **Footnote** | An AI agent that reads a public company's SEC filings and writes an analysis where every number is cited to the exact filing it came from, and machine-verified. The language model never produces a number: Python builds a fact ledger, the model refers to facts by token, and a verifier rejects any figure that is not cited. | [footnote-jurat.vercel.app](https://footnote-jurat.vercel.app) |
 | **The Rock** | The campus noticeboard at Roanoke College, with a screen around it: dining menus scraped live from the college's own feed with per-dish macros, plus a marketplace, ride board, events and course reviews. Installable, dark-first, and unaffiliated with the college on every screen that matters. | [therockroanoke.tech](https://www.therockroanoke.tech) |
 | **AgentVouch** | A payment agent that checks who it is actually paying before any money moves — sealed identity, liveness, and a signed quote verified against GoDaddy's ANS transparency log, with a hash-chained ledger anchored on Solana. Built with a team. | [agentvouch.us](https://agentvouch.us) |
-| **KLIMB** | Digital SAT prep. A tagged question bank, per-skill mastery measured from a student's own attempts, and a study plan built backwards from their test date. | [quiet-study-three.vercel.app](https://quiet-study-three.vercel.app) |
+| **KLIMB** | Digital SAT prep. A tagged question bank, per-skill mastery measured from a student's own attempts, and a study plan built backwards from their test date. | [klimb-sat.vercel.app](https://klimb-sat.vercel.app) |
 | **Jurat OS** | A personal life OS — net worth that updates itself from live metal and equity prices, budgets, habits, tasks, and a Telegram bot that logs an expense from one sentence. | [jurat-os.vercel.app](https://jurat-os.vercel.app) |
 | **PolyaBor** | Find and book football pitches across Uzbekistan. Search by time and neighbourhood, hold a slot, confirm in Telegram. | [polya-bor.vercel.app](https://polya-bor.vercel.app) |
 | **NAV** | A guide to Uzbekistan's startup ecosystem: who is building what, which funds are active, where a founder actually starts. | [nav-international.vercel.app](https://nav-international.vercel.app) |
