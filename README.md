@@ -21,8 +21,11 @@ Everything here is live — click and it opens.
 
 | | What it is | Live |
 |---|---|---|
+| **Filed** | Which US employers actually file H-1B paperwork for entry-level software and finance roles, and at what pay. Built only from government records: 2,136,934 Labor Condition Applications from the Department of Labor plus the USCIS Employer Data Hub. Every figure on the page carries a source tag naming its file, fiscal year and row count, and anything missing from the files is labelled missing rather than drawn as zero. | [filed-gray.vercel.app](https://filed-gray.vercel.app) |
 | **MARGINAL** | What your next dollar of retirement income actually costs, once Social Security taxation, capital gains stacking, the senior deduction phase-out and Medicare's IRMAA cliffs are all counted. A Rust tax engine compiled to WebAssembly: the arithmetic runs in your browser and your figures never leave it. | [marginal-sand.vercel.app](https://marginal-sand.vercel.app) |
-| **Footnote** | An AI agent that reads a public company's SEC filings and writes an analysis where every number is cited to the exact filing it came from, and machine-verified. The language model never produces a number: Python builds a fact ledger, the model refers to facts by token, and a verifier rejects any figure that is not cited. | [demo](https://footnote-jurat.vercel.app) · [live](https://footnote.streamlit.app) |
+| **Footnote** | An AI agent that reads a public company's SEC filings and writes an analysis where every number is cited to the exact filing it came from, and machine-verified. The language model never produces a number: Python builds a fact ledger, the model refers to facts by token, and a verifier rejects any figure that is not cited. | [footnote-jurat.vercel.app](https://footnote-jurat.vercel.app) |
+| **The Rock** | The campus noticeboard at Roanoke College, with a screen around it: dining menus scraped live from the college's own feed with per-dish macros, plus a marketplace, ride board, events and course reviews. Installable, dark-first, and unaffiliated with the college on every screen that matters. | [therockroanoke.tech](https://www.therockroanoke.tech) |
+| **AgentVouch** | A payment agent that checks who it is actually paying before any money moves — sealed identity, liveness, and a signed quote verified against GoDaddy's ANS transparency log, with a hash-chained ledger anchored on Solana. Built with a team. | [agentvouch.us](https://agentvouch.us) |
 | **KLIMB** | Digital SAT prep. A tagged question bank, per-skill mastery measured from a student's own attempts, and a study plan built backwards from their test date. | [quiet-study-three.vercel.app](https://quiet-study-three.vercel.app) |
 | **Jurat OS** | A personal life OS — net worth that updates itself from live metal and equity prices, budgets, habits, tasks, and a Telegram bot that logs an expense from one sentence. | [jurat-os.vercel.app](https://jurat-os.vercel.app) |
 | **PolyaBor** | Find and book football pitches across Uzbekistan. Search by time and neighbourhood, hold a slot, confirm in Telegram. | [polya-bor.vercel.app](https://polya-bor.vercel.app) |
@@ -30,6 +33,37 @@ Everything here is live — click and it opens.
 | **Agora Aid Program** | A full-scholarship admissions programme for the Class of 2031 — deliberately no framework, no build step, no dependencies. | [agora-aid.vercel.app](https://agora-aid.vercel.app) |
 | **BiteWise** | Nutrition tracking that starts from what you actually ate: describe the meal, get the macros. | [v0-nutrition-info-app.vercel.app](https://v0-nutrition-info-app.vercel.app) |
 | **NAVON Agency** | Brand and site for a creative agency — one long scroll that has to carry the whole pitch. | [navon-agency.vercel.app](https://navon-agency.vercel.app) |
+
+### Research
+
+Work whose output is findings rather than a front end, so these link to the
+repository that holds them.
+
+| | What it is | Repo |
+|---|---|---|
+| **Duolingo teardown** | How one app is built to bring you back, read out of a single shipped APK: the streak's day boundary, freeze and repair logic, notification copy by tone, the energy and gem economy, and an inventory of 442 experiment and feature flags. Every claim carries a pointer, a confidence level and what is still unknown; nothing was run against Duolingo's servers, and no APK or decompiled code is published. | [duolingo-teardown](https://github.com/jurat11/duolingo-teardown) |
+| **Crypto trend filter** | A daily BTC/ETH bot that holds while each asset is above its 50-day average and sits in cash below it, sized down automatically when volatility spikes. Picked on 2018–22 data and then left alone on 2023–26: 37% a year out of sample against a 26% worst drawdown, where buy-and-hold drew down 77%. Paper money only, Python standard library only, no API keys. | [crypto-bot](https://github.com/jurat11/crypto-bot) |
+
+---
+
+### Filed, in a bit more detail
+
+Every H-1B site you can find estimates something. Filed refuses to: it reads the
+government's own disclosure files — 26 of them, 1.74 GB, FY2023 through FY2026 Q3 —
+and shows you nothing it cannot point at. Type an employer and you get its certified
+LCAs by year, the offered pay spread, the prevailing wage level mix, an entry-level
+signal, and USCIS petition decisions, each figure tagged with the file, quarter and
+row count behind it.
+
+The hard parts were identity and honesty. FY2023 omits the federal tax ID, so those
+cases are linked by normalised name and state, and two legal entities of one parent
+(Amazon.com Services and Amazon Web Services) are never silently merged. DOL and
+USCIS share no key, so the join matches on name, state and the last four tax ID
+digits — it reaches 74.8% of USCIS employers, and that rate is
+[published on the site](https://filed-gray.vercel.app) instead of hidden. An
+independent recount of every headline figure from the raw spreadsheets with pandas
+finds zero differences, and the resolver scores 100% precision and recall on 60
+hand-labelled pairs.
 
 ---
 
@@ -69,9 +103,9 @@ MARGINAL: across a 25-company universe every report passes verification with zer
 uncited numbers, and an independent second pass re-fetches every figure through a
 different SEC endpoint and finds zero mismatches.
 
-Two front doors: the [demo](https://footnote-jurat.vercel.app) is an instant,
-always-on static page showing ten pre-built reports, and the
-[live app](https://footnote.streamlit.app) analyzes any US-listed company on demand.
+The [demo](https://footnote-jurat.vercel.app) is an instant, always-on static page
+showing ten pre-built reports; the Streamlit app in the repo analyses any US-listed
+company on demand, locally or on your own deploy.
 
 ---
 
@@ -102,7 +136,9 @@ rows skip layout entirely.
   <img alt="Vite" src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white">
   <img alt="Three.js" src="https://img.shields.io/badge/three.js-000000?style=flat-square&logo=threedotjs&logoColor=white">
   <img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white">
+  <img alt="Go" src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white">
   <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
+  <img alt="DuckDB" src="https://img.shields.io/badge/DuckDB-FFF000?style=flat-square&logo=duckdb&logoColor=black">
   <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white">
   <img alt="Supabase" src="https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white">
   <img alt="Telegram" src="https://img.shields.io/badge/Telegram%20Bots-26A5E4?style=flat-square&logo=telegram&logoColor=white">
@@ -113,7 +149,9 @@ rows skip layout entirely.
 
 ### Currently
 
-- Writing a retirement tax engine in Rust that has to agree with a second implementation to the cent — **[MARGINAL](https://github.com/jurat11/marginal)**
+- Keeping **[Filed](https://filed-gray.vercel.app)** current as DOL and USCIS publish — a monthly refresh rebuilds only what the new quarter touches
+- Building the campus board my college doesn't have — **[The Rock](https://www.therockroanoke.tech)**
+- Reading shipped apps to learn how they hold attention — **[duolingo-teardown](https://github.com/jurat11/duolingo-teardown)**
 - Teaching a question bank to work out what a student actually doesn't know yet — **KLIMB**
 - Running my own life off a dashboard and a Telegram bot — **Jurat OS**
 - Reading the Uzbek classics alongside the canon, in public → [the library](https://juratnortojiev.us/library)
